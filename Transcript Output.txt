@@ -1,0 +1,133 @@
+Created MTV Music Awards ceremony
+=> ERROR : There are no award categories in the MTV Music Awards ceremony.
+Created Best Rock Band award category
+Created Best Pop Artist award category
+Created Best Alternative Band award category
+Created Best Electronic Revelation award category
+Created a jury for an IndividualArtistAwardCategory
+Created a jury for a BandAwardCategory
+Created a jury for a BandAwardCategory
+Created a jury for a MixedAwardCategory
+Created Matthew Bellamy, active since 1994
+Created Dominic Howard, active since 1994
+Created Christopher Wolstenholme, active since 1994
+Created Bono, active since 1976
+Created The Edge, active since 1976
+Created Larry Mullen Jr, active since 1978
+Created Adam Clayton, active since 1976
+Created Chris Martin, active since 1996
+Created Guy Berryman, active since 1996
+Created Jon Buckland, active since 1996
+Created Will Champion, active since 1996
+Created Ozark Henry, active since 1996
+Created Sting, active since 1974
+Created WoodKid, active since 2014
+Created Hans Zimmer, active since 2015
+Created Thomas Bangalter, active since 2014
+Created Sia, active since 2014
+Created Hugh Laurie, active since 2015
+Created Muse, active since 1994
+The individual artist Matthew Bellamy was added to Muse as a Singer
+The individual artist Dominic Howard was added to Muse as a Drummer
+The individual artist Christopher Wolstenholme was added to Muse as a Bassist
+Created U2, active since 1976
+The individual artist Bono was added to U2 as a Singer
+The individual artist The Edge was added to U2 as a Guitarist
+The individual artist Larry Mullen Jr was added to U2 as a Drummer
+The individual artist Adam Clayton was added to U2 as a Bassist
+Created Coldplay, active since 1996
+The individual artist Chris Martin was added to Coldplay as a Singer
+The individual artist Guy Berryman was added to Coldplay as a Bassist
+The individual artist Jon Buckland was added to Coldplay as a Guitarist
+The individual artist Will Champion was added to Coldplay as a Drummer
+Created Foo Fighters, active since 1994
+Created Pink Floyd, active since 1965
+Created Red Hot Chili Peppers, active since 1983
+Created Daft Punk, active since 2013
+The individual artist Thomas Bangalter was added to Daft Punk as a Keyboard
+Created Depeche Mode, active since 2013
+Created Gorillaz, active since 2015
+Created Zero 7, active since 2014
+The individual artist Ozark Henry was added in the jury of the Best Rock Band award category.
+The individual artist Jon Buckland was added in the jury of the Best Rock Band award category.
+The individual artist Chris Martin was added in the jury of the Best Rock Band award category.
+The individual artist Will Champion was added in the jury of the Best Rock Band award category.
+The individual artist Guy Berryman was added in the jury of the Best Rock Band award category.
+The individual artist : Chris Martin was nominated for the Best Pop Artist award category.
+=> ERROR : The individual artist : Chris Martin is nominated in the Best Pop Artist award category.
+The individual artist Bono was added in the jury of the Best Pop Artist award category.
+The individual artist Ozark Henry was added in the jury of the Best Pop Artist award category.
+The individual artist Adam Clayton was added in the jury of the Best Pop Artist award category.
+The individual artist Dominic Howard was added in the jury of the Best Pop Artist award category.
+=> ERROR : The individual artist : Dominic Howard is already in the jury for the Best Pop Artist award category.
+The individual artist WoodKid was added in the jury of the Best Pop Artist award category.
+=> ERROR : Jury has already 5 jury members
+The individual artist Ozark Henry was added in the jury of the Best Electronic Revelation award category.
+The individual artist Adam Clayton was added in the jury of the Best Electronic Revelation award category.
+The individual artist WoodKid was added in the jury of the Best Electronic Revelation award category.
+The individual artist Thomas Bangalter was added in the jury of the Best Electronic Revelation award category.
+The individual artist Christopher Wolstenholme was added in the jury of the Best Electronic Revelation award category.
+=> ERROR : Some juries of some award categories are not full.
+=> ERROR : The individual artist : Ozark Henry can only be in the jury of at most three award categories.
+The individual artist WoodKid was added in the jury of the Best Alternative Band award category.
+The individual artist Hans Zimmer was added in the jury of the Best Alternative Band award category.
+The individual artist Thomas Bangalter was added in the jury of the Best Alternative Band award category.
+The individual artist Sia was added in the jury of the Best Alternative Band award category.
+The individual artist Hugh Laurie was added in the jury of the Best Alternative Band award category.
+=> ERROR : Best Rock Band is not for newcomers and Daft Punk is one.
+=> ERROR : The Band : Coldplay has a member that is in the jury of the Best Rock Band award category.
+The Band : U2 was nominated for the Best Rock Band award category.
+The Band : Muse was nominated for the Best Rock Band award category.
+The Band : Foo Fighters was nominated for the Best Rock Band award category.
+The Band : Pink Floyd was nominated for the Best Rock Band award category.
+The Band : Red Hot Chili Peppers was nominated for the Best Rock Band award category.
+=> ERROR : Cannot nominate U2 for the Best Pop Artist award category since it is a band.
+=> ERROR : The individual artist Chris Martin is already nominated for the Best Pop Artist award category
+The individual artist : Jon Buckland was nominated for the Best Pop Artist award category.
+The individual artist : Guy Berryman was nominated for the Best Pop Artist award category.
+The individual artist : Christopher Wolstenholme was nominated for the Best Pop Artist award category.
+The individual artist : Sting was nominated for the Best Pop Artist award category.
+=> ERROR : There are already 5 nominees for the Best Pop Artist award category
+The Band : Muse was nominated for the Best Alternative Band award category.
+The Band : Coldplay was nominated for the Best Alternative Band award category.
+The Band : U2 was nominated for the Best Alternative Band award category.
+The Band : Foo Fighters was nominated for the Best Alternative Band award category.
+The Band : Pink Floyd was nominated for the Best Alternative Band award category.
+=> ERROR : The Band : Daft Punk has a member that is in the jury of the Best Electronic Revelation award category.
+=> ERROR : The individual artist WoodKid is a jury member for the Best Electronic Revelation award category
+=> ERROR : Some award categories do not have their 5 nominees.
+The Band : Depeche Mode was nominated for the Best Electronic Revelation award category.
+The individual artist : Sia was nominated for the Best Electronic Revelation award category.
+The Band : Gorillaz was nominated for the Best Electronic Revelation award category.
+The Band : Zero 7 was nominated for the Best Electronic Revelation award category.
+The individual artist : Hugh Laurie was nominated for the Best Electronic Revelation award category.
+The votes for the MTV Music Awards ceremony can begin right now !
+The individual artist Ozark Henry has voted for Pink Floyd for the Best Rock Band award category.
+The individual artist Jon Buckland has voted for Muse for the Best Rock Band award category.
+The individual artist Chris Martin has voted for Red Hot Chili Peppers for the Best Rock Band award category.
+The individual artist Will Champion has voted for U2 for the Best Rock Band award category.
+The individual artist Guy Berryman has voted for U2 for the Best Rock Band award category.
+=> ERROR : The individual artist Matthew Bellamy is not in the Jury in the Best Pop Artist award category.
+=> ERROR : The individual artist Jon Buckland is not in the Jury in the Best Pop Artist award category.
+The individual artist Bono has voted for Chris Martin for the Best Pop Artist award category.
+The individual artist Ozark Henry has voted for Chris Martin for the Best Pop Artist award category.
+The individual artist Adam Clayton has voted for Chris Martin for the Best Pop Artist award category.
+=> ERROR : The individual artist Bono has already voted for in the Best Pop Artist award category.
+The individual artist Dominic Howard has voted for Sting for the Best Pop Artist award category.
+The individual artist WoodKid has voted for Jon Buckland for the Best Pop Artist award category.
+The individual artist WoodKid has voted for Coldplay for the Best Alternative Band award category.
+The individual artist Hans Zimmer has voted for Coldplay for the Best Alternative Band award category.
+The individual artist Thomas Bangalter has voted for Coldplay for the Best Alternative Band award category.
+The individual artist Sia has voted for Coldplay for the Best Alternative Band award category.
+The individual artist Hugh Laurie has voted for Pink Floyd for the Best Alternative Band award category.
+=> ERROR : Some Jury have not finished voting.
+The individual artist Ozark Henry has voted for Depeche Mode for the Best Electronic Revelation award category.
+The individual artist Adam Clayton has voted for Zero 7 for the Best Electronic Revelation award category.
+The individual artist WoodKid has voted for Gorillaz for the Best Electronic Revelation award category.
+The individual artist Thomas Bangalter has voted for Zero 7 for the Best Electronic Revelation award category.
+The individual artist Christopher Wolstenholme has voted for Gorillaz for the Best Electronic Revelation award category.
+U2 is the winner for the Best Rock Band award category
+Coldplay is the winner for the Best Alternative Band award category
+Chris Martin is the winner for the Best Pop Artist award category
+It is a tie between :  a MyBand a MyBand for the Best Electronic Revelation award category as newcomer !
+The band Coldplay has won 2 awards in total !

@@ -1,0 +1,226 @@
+"Ceremony Creation"
+
+Transcript open.
+awardCeremony := Ceremony ceremonyName: 'MTV Music Awards'.
+awardCeremony isStartingCeremonyPossible. "ERROR : There are no categories yet"
+
+"Award Creation"
+
+bestRockBandCategory := BandAwardCategory name: 'Best Rock Band' openForNewComers: false.
+awardCeremony addAwardCategory: bestRockBandCategory.
+
+bestPopArtistCategory := IndividualArtistAwardCategory name: 'Best Pop Artist' openForNewComers: false.
+awardCeremony addAwardCategory: bestPopArtistCategory.
+
+bestAlternativeBandCategory := BandAwardCategory name: 'Best Alternative Band' openForNewComers: false.
+awardCeremony addAwardCategory: bestAlternativeBandCategory.
+
+"Newcomer Award Creation"
+
+bestElectronicRevelation := MixedAwardCategory name: 'Best Electronic Revelation' openForNewComers: true.
+awardCeremony addAwardCategory: bestElectronicRevelation.
+
+"Jury Creation"
+
+bestPopArtistJury := Jury forAwardCategory: bestPopArtistCategory.
+bestRockBandJury := Jury forAwardCategory: bestRockBandCategory.
+bestAlternativeBandJury := Jury forAwardCategory: bestAlternativeBandCategory.
+bestElectronicRevelationJury := Jury forAwardCategory: bestElectronicRevelation.
+
+"IndividualArtist Creation"
+
+matthewBellamy := IndividualArtist name: 'Matthew Bellamy' activeSince: 1994.
+dominicHoward := IndividualArtist name: 'Dominic Howard' activeSince: 1994.
+christopherWolstenholme := IndividualArtist name: 'Christopher Wolstenholme' activeSince: 1994.
+
+bono := IndividualArtist name: 'Bono' activeSince: 1976.
+theEdge := IndividualArtist name: 'The Edge' activeSince: 1976.
+larryMullenJr := IndividualArtist name: 'Larry Mullen Jr' activeSince: 1978.
+adamClayton := IndividualArtist name: 'Adam Clayton' activeSince: 1976.
+
+chrisMartin := IndividualArtist name: 'Chris Martin' activeSince: 1996.
+guyBerryman := IndividualArtist name: 'Guy Berryman' activeSince: 1996.
+jonBuckland := IndividualArtist name: 'Jon Buckland' activeSince: 1996.
+willChampion := IndividualArtist name: 'Will Champion' activeSince: 1996.
+
+ozarkHenry := IndividualArtist name: 'Ozark Henry' activeSince: 1996.
+sting := IndividualArtist name: 'Sting' activeSince: 1974.
+
+"Newcomer IndividualArtist Creation"
+
+woodKid := IndividualArtist name: 'WoodKid' activeSince: 2014.
+hansZimmer := IndividualArtist name: 'Hans Zimmer' activeSince: 2015.
+thomasBangalter := IndividualArtist name: 'Thomas Bangalter' activeSince: 2014.
+sia := IndividualArtist name: 'Sia' activeSince: 2014.
+hughLaurie := IndividualArtist name: 'Hugh Laurie' activeSince: 2015.
+
+"Band Creation"
+
+muse := Band name: 'Muse' activeSince: 1994.
+
+muse addIndividualArtist: matthewBellamy role: 'Singer'.
+matthewBellamy addToBand: muse role: 'Singer'.
+
+muse addIndividualArtist: dominicHoward role: 'Drummer'.
+dominicHoward addToBand: muse role: 'Drummer'.
+
+muse addIndividualArtist: christopherWolstenholme role: 'Bassist'.
+christopherWolstenholme addToBand: muse role: 'Bassist'.
+
+u2 := Band name: 'U2' activeSince: 1976.
+
+u2 addIndividualArtist: bono role: 'Singer'.
+bono addToBand: u2 role: 'Singer'.
+
+u2 addIndividualArtist: theEdge role: 'Guitarist'.
+theEdge addToBand: u2 role: 'Guitarist'.
+
+u2 addIndividualArtist: larryMullenJr role: 'Drummer'.
+larryMullenJr addToBand: u2 role: 'Drummer'.
+
+u2 addIndividualArtist: adamClayton role: 'Bassist'.
+adamClayton addToBand: u2 role: 'Bassist'.
+
+coldPlay := Band name: 'Coldplay' activeSince: 1996.
+
+coldPlay addIndividualArtist: chrisMartin role: 'Singer'.
+chrisMartin addToBand: coldPlay role: 'Singer'.
+
+coldPlay addIndividualArtist: guyBerryman role: 'Bassist'.
+guyBerryman addToBand: coldPlay role: 'Bassist'.
+
+coldPlay addIndividualArtist: jonBuckland role: 'Guitarist'.
+jonBuckland addToBand: coldPlay role: 'Guitarist'.
+
+coldPlay addIndividualArtist: willChampion role: 'Drummer'.
+willChampion addToBand: coldPlay role: 'Drummer'.
+
+fooFighters := Band name: 'Foo Fighters' activeSince: 1994.
+pinkFloyd := Band name: 'Pink Floyd' activeSince: 1965.
+redHotChiliPeppers:= Band name: 'Red Hot Chili Peppers' activeSince: 1983.
+
+"Newcomer Band Creation"
+
+daftPunk := Band name: 'Daft Punk' activeSince: 2013.
+daftPunk addIndividualArtist: thomasBangalter role: 'Keyboard'.
+thomasBangalter addToBand: daftPunk role: 'Keyboard'.
+
+depecheMode := Band name: 'Depeche Mode' activeSince: 2013.
+gorillaz := Band name: 'Gorillaz' activeSince: 2015.
+zero7 := Band name: 'Zero 7' activeSince: 2014.
+
+"Adding Jury Members"
+
+bestRockBandJury addJuryMember: ozarkHenry.
+bestRockBandJury addJuryMember: jonBuckland.
+bestRockBandJury addJuryMember: chrisMartin.
+bestRockBandJury addJuryMember: willChampion.
+bestRockBandJury addJuryMember: guyBerryman.
+
+bestPopArtistCategory nominate: chrisMartin.
+
+bestPopArtistJury addJuryMember: chrisMartin. "ERROR : chrisMartin is nominated in bestPopArtistCategory"
+
+bestPopArtistJury addJuryMember: bono.
+bestPopArtistJury addJuryMember: ozarkHenry.
+bestPopArtistJury addJuryMember: adamClayton.
+bestPopArtistJury addJuryMember: dominicHoward.
+
+bestPopArtistJury addJuryMember: dominicHoward. "ERROR : dominicHoward is already in bestPopArtistJury"
+
+bestPopArtistJury addJuryMember: woodKid.
+
+bestPopArtistJury addJuryMember: larryMullenJr. "ERROR : bestPopArtistJury is full"
+
+bestElectronicRevelationJury addJuryMember: ozarkHenry.
+bestElectronicRevelationJury addJuryMember: adamClayton.
+bestElectronicRevelationJury addJuryMember: woodKid.
+bestElectronicRevelationJury addJuryMember: thomasBangalter.
+bestElectronicRevelationJury addJuryMember: christopherWolstenholme.
+
+awardCeremony isStartingCeremonyPossible. "ERROR : Some Juries are not full"
+bestAlternativeBandJury addJuryMember: ozarkHenry. "ERROR : ozarkHenry is already in 3 Juries"
+
+bestAlternativeBandJury addJuryMember: woodKid.
+bestAlternativeBandJury addJuryMember: hansZimmer.
+bestAlternativeBandJury addJuryMember: thomasBangalter.
+bestAlternativeBandJury addJuryMember: sia.
+bestAlternativeBandJury addJuryMember: hughLaurie.
+
+"Nominations"
+
+bestRockBandCategory nominate: daftPunk. "ERROR : bestRockBandCategory is not for Newcomers"
+bestRockBandCategory nominate: coldPlay. "ERROR : coldPlay has one member in the jury" 
+
+bestRockBandCategory nominate: u2.
+bestRockBandCategory nominate: muse. 
+bestRockBandCategory nominate: fooFighters. 
+bestRockBandCategory nominate: pinkFloyd. 
+bestRockBandCategory nominate: redHotChiliPeppers. 
+
+bestPopArtistCategory nominate: u2. "ERROR : u2 is a band"
+bestPopArtistCategory nominate: chrisMartin. "ERROR : chrisMartin is already nominated in bestPopArtistCategory"
+
+bestPopArtistCategory nominate: jonBuckland.
+bestPopArtistCategory nominate: guyBerryman.
+bestPopArtistCategory nominate: christopherWolstenholme.
+bestPopArtistCategory nominate: sting.
+
+bestPopArtistCategory nominate: theEdge. "ERROR : bestPopArtistCategory is full"
+
+bestAlternativeBandCategory nominate: muse.
+bestAlternativeBandCategory nominate: coldPlay.
+bestAlternativeBandCategory nominate: u2.
+bestAlternativeBandCategory nominate: fooFighters.
+bestAlternativeBandCategory nominate: pinkFloyd.
+
+bestElectronicRevelation nominate: daftPunk. "ERROR : daftPunk has one member in the jury"
+bestElectronicRevelation nominate: woodKid. "ERROR : woodKid is in the bestElectronicRevelationJury"
+awardCeremony isStartingCeremonyPossible. "ERROR : Some Categories do not have their 5 nominees"
+
+bestElectronicRevelation nominate: depecheMode.
+bestElectronicRevelation nominate: sia.
+bestElectronicRevelation nominate: gorillaz.
+bestElectronicRevelation nominate: zero7.
+bestElectronicRevelation nominate: hughLaurie.
+
+"Votes"
+
+awardCeremony isStartingCeremonyPossible.
+
+bestRockBandJury member: ozarkHenry isVotingFor: pinkFloyd.
+bestRockBandJury member: jonBuckland isVotingFor: muse.
+bestRockBandJury member: chrisMartin isVotingFor: redHotChiliPeppers.
+bestRockBandJury member: willChampion isVotingFor: u2.
+bestRockBandJury member: guyBerryman isVotingFor: u2.
+
+bestPopArtistJury member: matthewBellamy isVotingFor: willChampion. "ERROR : willChampion is not nominated in bestPopArtistCategory"
+bestPopArtistJury member: jonBuckland isVotingFor: chrisMartin. "ERROR : jonBuckland is not in the bestPopArtistJury"
+
+bestPopArtistJury member: bono isVotingFor: chrisMartin.
+bestPopArtistJury member: ozarkHenry isVotingFor: chrisMartin.
+bestPopArtistJury member: adamClayton isVotingFor: chrisMartin.
+
+bestPopArtistJury member: bono isVotingFor: chrisMartin. "ERROR : bono already voted in bestPopArtistJury"
+
+bestPopArtistJury member: dominicHoward isVotingFor: sting.
+bestPopArtistJury member: woodKid isVotingFor: jonBuckland.
+
+bestAlternativeBandJury member: woodKid isVotingFor: coldPlay.
+bestAlternativeBandJury member: hansZimmer isVotingFor: coldPlay.
+bestAlternativeBandJury member: thomasBangalter isVotingFor: coldPlay.
+bestAlternativeBandJury member: sia isVotingFor: coldPlay.
+bestAlternativeBandJury member: hughLaurie isVotingFor: pinkFloyd.
+
+awardCeremony declareWinners. "ERROR : Some Jury have not finished voting"
+
+bestElectronicRevelationJury member: ozarkHenry isVotingFor: depecheMode.
+bestElectronicRevelationJury member: adamClayton isVotingFor: zero7.
+bestElectronicRevelationJury member: woodKid isVotingFor: gorillaz.
+bestElectronicRevelationJury member: thomasBangalter isVotingFor: zero7.
+bestElectronicRevelationJury member: christopherWolstenholme isVotingFor: gorillaz.
+
+"Declare Winners"
+
+awardCeremony declareWinners.
+Transcript show: 'The band ', coldPlay nomineeName, ' has won ', coldPlay totalAwardsWon asString, ' awards in total !'.
